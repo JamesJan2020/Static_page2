@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+:root {
+    --mycolor: rgba(248, 247, 247, 0.9);
+}
+
+body {
+    background-image: url("../img/sword-logo.JPG")
+}
+
+#msgitem1 {
+    position: fixed;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid goldenrod;
+    top: 10vh;
+    left: 28vw;
+    background-color: var(--mycolor);
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+    border-radius: 30px;
+    animation: showCase 1s;
+    z-index: 1;
+    display: none;
+}
+
+#msgitem1>img {
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#msgitem2 {
+    position: fixed;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+    border-radius: 30px;
+    background-color: var(--mycolor);
+    animation: showCase 1s;
+    top: 11vh;
+    left: 31vw;
+    display: none;
+}
+
+#msgitem2>img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* 規則圖片 */
+
+#msgitem3 {
+    position: fixed;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+    border-radius: 30px;
+    background-color: var(--mycolor);
+    animation: showCase 1s;
+    top: 12vh;
+    left: 25vw;
+    z-index: 2;
+    display: none;
+    width: 50vw;
+    height: 35vw;
+}
+
+#msgitem3>img {
+    width: 50vw;
+    height: 35vw;
+    object-fit: contain;
+}
+
+#close_btn {
+    width: 65px;
+    height: 65px;
+    background-image: radial-gradient( circle farthest-corner at 3.1% 8.2%, rgba(248, 250, 107, 1) 0%, rgba(238, 148, 148, 1) 98.2%);
+    clip-path: polygon(50% 0%, 68% 29%, 98% 35%, 77% 60%, 79% 91%, 50% 78%, 21% 91%, 23% 60%, 2% 35%, 33% 29%);
+    font-size: 2.6rem;
+    font-weight: 900;
+    padding: 0px 5px 0 0;
+    color: red;
+    text-shadow: 2px 2px black;
+    position: absolute;
+    right: 0;
+}
+
+#close_btn:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#close_btn:active {
+    cursor: pointer;
+    color: red;
+}
+
+.container {
+    width: 990px;
+    height: 700px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    border: 5px solid goldenrod;
+}
+
+.wrap_top {
+    width: 960px;
+    height: 550px;
+    position: relative;
+    display: flex;
+}
+
+
+/* 左邊上方遊戲區域 */
+
+#item_top_L {
+    width: 700px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+
+/* 第一張圖Chocobo容器 */
+
+#bag1 {
+    position: absolute;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+
+#bag1>img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+
+/* 第二張圖mogole容器 */
+
+#bag2 {
+    top: 250px;
+    left: 300px;
+    position: absolute;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    display: none;
+}
+
+#bag2>img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+
+/* 第三張圖picu容器 */
+
+#bag3 {
+    top: 500px;
+    left: 500px;
+    position: absolute;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    display: none;
+}
+
+#bag3>img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 50px
+}
+
+
+/* 右半邊區域 */
+
+#item_top_R {
+    width: 260px;
+    height: 690px;
+    border-left: 5px solid goldenrod;
+}
+
+#item_top_R>p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: "Microsoft JhengHei ";
+    text-shadow: 1px 1px black;
+    margin-top: 20px;
+}
+
+
+/* 時間顯示 */
+
+#item_top_R>#timer {
+    height: 32px;
+    font-size: 2rem;
+    margin: -15px 0 10px 0;
+    color: goldenrod;
+}
+
+
+/* 分數顯示 */
+
+#item_top_R>#score {
+    height: 32px;
+    font-size: 2rem;
+    margin: -15px 0 10px 0;
+    padding-left: 25px;
+    color: goldenrod;
+}
+
+   
+
+
+/* 右半邊區域圖片 */
+
+#item_top_R img {
+    text-align: left;
+    width: 260px;
+    height: 310px;
+    margin-top: 18px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+#item_top_R>img:hover {
+    cursor: pointer;
+}
+
+#item_top_R>#nowTime {
+    font-size: 1.6rem;
+    margin-top: -20px;
+    color: red;
+}
+
+
+/* 下方區域 */
+
+.wrap_bottom {
+    margin-top: 50px;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px
+}
+
+
+
+/* strat按鈕 */
+
+#item3>button {
+    width: 250px;
+    height: 50px;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+    font-family: 'Berkshire Swash';
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    background: radial-gradient(circle, rgba(43, 29, 223, 1) 0%, rgba(33, 31, 200, 1) 56%, rgba(224, 224, 240, 1) 85%, rgba(20, 14, 222, 1) 100%);
+    color: white;
+}
+
+#item3>button:hover {
+    color: red;
+    text-shadow: 1px 1px white;
+    cursor: pointer;
+}
+
+#item3>button:active {
+    color: goldenrod;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+}
+
+@keyframes imgMove {
+    0% {
+        top: 10px;
+        left: 10x;
+    }
+    25% {
+        top: 500px;
+        left: 500px;
+    }
+    50% {
+        top: 500px;
+        left: 10px;
+    }
+    75% {
+        top: 10px;
+        left: 500px;
+    }
+    100% {
+        top: 20px;
+        left: 30px;
+    }
+}
+
+@keyframes imgRotate {
+    0% {
+        top: 250px;
+        left: 50x;
+    }
+    25% {
+        top: 10px;
+        left: 500px;
+        transform: rotate(360deg);
+    }
+    50% {
+        top: 350px;
+        left: 300px;
+    }
+    75% {
+        top: 10px;
+        left: 10px;
+    }
+    100% {
+        top: 350px;
+        left: 500px;
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes imgOpacity {
+    0% {
+        top: 80px;
+        left: 80px;
+        opacity: 0.2;
+    }
+    25% {
+        top: 250px;
+        left: 250px;
+        opacity: 0.8;
+        transform: rotateY(80deg);
+    }
+    50% {
+        top: 350px;
+        left: 500px;
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    75% {
+        top: 500px;
+        left: 500px;
+        opacity: 0.5;
+        transform: rotate(360deg)
+    }
+    100% {
+        top: 350px;
+        left: 10px;
+        opacity: 0.9;
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes onlyRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes showCase {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}

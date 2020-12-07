@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final_Fantasy</title>
+    <link rel="icon" href="img/final_fantasy_legends_logo_by_eldi13.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/Fantasyopening.css">
+</head>
+
+<body onkeydown="movePointer(event)">
+
+
+    <!-- 主畫面 -->
+
+    <div class="container">
+        <div class="wrap_top">
+            <img id="main_pic" src="img/openimg.JPG" alt="">
+            <div class="wrap_mid">
+                <img id="pointer" src="img/pointer1.png" alt="">
+                <img id="Chocobo" onclick="opMonitor()" on src="img/FF Chocobo.gif" alt="">
+            </div>
+        </div>
+        <div class="wrap_bottom">
+            <p>Loding</p>
+            <p id="dotHome"></p>
+        </div>
+    </div>
+<!-- 彈出視窗進首頁選單 -->
+    <div id="monitor_open">
+        <img id="monitor" src="img/gamemonitor.png" alt="">
+        <img id="pointer2" src="img/pointer2.png" alt="">
+
+    </div>
+    
+ 
+    <script src="js/Fantasyopening.js"></script>
+</body>
+
+</html>

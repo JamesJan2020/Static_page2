@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+h1 {
+    font-family: 'Berkshire Swash';
+    color: goldenrod;
+    text-align:center;
+}
+
+h2 {
+    font-family: 'Berkshire Swash';
+    color: goldenrod;
+}
+
+h4 {
+    font-family: 'Berkshire Swash';
+    text-align: center;
+    margin-top:10px;
+}
+
+.container>form {
+    display: flex;
+}
+
+.content_L .wrap {
+    width: 960px;
+    display: flex;
+    color: goldenrod;
+}
+
+.content_L .wrap .item {
+    width: 960px;
+    margin: 10px;
+}
+
+
+.content_R{
+    margin-left:10px;
+}
+.content_R .wrap_top {
+    width: 450px;
+    height: 700px;
+    border: 2px solid goldenrod;
+    margin-top: 20px;
+    color: goldenrod;
+    overflow: auto;
+}
+
+.content_R .wrap_bottom {
+    width: 450px;
+    height: 120px;
+    border: 2px solid goldenrod;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+button {
+    margin: -10px 0 0 90px;
+    font-weight: 900;
+}
+
+button:active {
+    background-color: red;
+    color: white;
+}
+
+.item>img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#item1>img, #item2>img, #item3>img, #item4>img, #item5>img, #item6>img, #item7>img, #item8>img, #item9>img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+#group {
+    display: flex;
+}
+
+#group p{
+     font-size: 1.5rem;
+     margin-top:-10px;
+     font-weight: 500;
+}
+
+
+/* 刪除按鈕 */
+
+#del_btn {
+    width: 45px;
+    height: 20px;
+    padding: 0 0 20px 0;
+    margin: 70px 50px 0 50px;
+}
+
+.hide {
+    display: none;
+}
+
+#group h3 {
+    text-align: center;
+}
+
+/* 總計按鈕 */
+
+#totPrice1 {
+    width: 180px;
+    margin-left: 20px;
+}
+
+.wrap_bottom .item {
+    display: flex;
+}
+
+.wrap_bottom button {
+    width: 100px;
+    height: 35px;
+    padding: 5px 0 30px 0;
+    margin: 20px 20px 0px 20px;
+    font-size: 1.3rem;
+}
+
+.content_RB {
+    width: 450px;
+    height: 380px;
+    border: 2px solid goldenrod;
+    margin-top: 20px;
+    color: goldenrod;
+    overflow-y: scroll;
+   
+}
+
+li {
+    font-family: 'Berkshire Swash';
+    color:white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+li .item {
+    text-align: center;
+    
+}
+
+li .item img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+li .item h4 {
+    font-family: 'Berkshire Swash';
+    color: goldenrod;
+    margin-right: 10px;
+}
+li .item h5 {
+    font-family: 'Berkshire Swash';
+    color: white;
+    margin-right: 10px;
+    margin-top:-10px;
+    
+}
+
+li .item p {
+    font-family: 'Berkshire Swash';
+    font-size: 1.3rem;
+    color: red;
+}
+#time{
+    color: white;
+    font-size: 1.4rem;
+}
+
+#spcart>img{
+    width: 50px;
+    height: 50px;
+   
+}
+
+input[type="checkbox"]{
+    position: relative;
+    left: 38px; 
+    
+}
+
